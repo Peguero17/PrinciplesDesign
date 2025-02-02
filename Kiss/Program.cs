@@ -32,7 +32,7 @@ namespace KISS
 
             decimal? tipPercentage = string.IsNullOrWhiteSpace(tipInput) ? null : decimal.Parse(tipInput);
 
-            Console.WriteLine(restaurantBill.CalculateTotal(prices, tipPercentage));
+            Console.WriteLine("Total a pagar: " + restaurantBill.CalculateTotal(prices, tipPercentage));
         }
     }
 }
